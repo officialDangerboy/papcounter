@@ -1,0 +1,153 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff6f1;
+    /* Creamy Peach vibe */
+    color: #2d3748;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.creamy-card {
+    background-color: #ffffff;
+    border: 1px solid #ffefe6;
+}
+
+.btn-peach {
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.btn-peach:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(237, 137, 189, 0.2);
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -10px;
+    z-index: 1000;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+.tenor-gif-embed {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 3px solid white;
+}
+
+.peach-accent {
+    color: #ff8a65;
+}
+
+.bg-peach-soft {
+    background-color: #fffbf9;
+}
+
+/* Neon CTA Button Styles */
+@keyframes neonPulsePurple {
+    0% {
+        box-shadow: 0 0 5px #f0f, 0 0 10px #f0f;
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 15px #f0f, 0 0 25px #f0f;
+        transform: scale(1.02);
+    }
+
+    100% {
+        box-shadow: 0 0 5px #f0f, 0 0 10px #f0f;
+        transform: scale(1);
+    }
+}
+
+@keyframes neonPulseCyan {
+    0% {
+        box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 15px #0ff, 0 0 25px #0ff;
+        transform: scale(1.02);
+    }
+
+    100% {
+        box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+        transform: scale(1);
+    }
+}
+
+@keyframes neonPulseGold {
+    0% {
+        box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00;
+        transform: scale(1.02);
+    }
+
+    100% {
+        box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+        transform: scale(1);
+    }
+}
+
+.neon-btn-purple {
+    background: #000;
+    color: #fff;
+    border: 2px solid #f0f;
+    animation: neonPulsePurple 2s infinite ease-in-out;
+    transition: all 0.2s;
+}
+
+.neon-btn-cyan {
+    background: #000;
+    color: #fff;
+    border: 2px solid #0ff;
+    animation: neonPulseCyan 2s infinite ease-in-out;
+    transition: all 0.2s;
+}
+
+.neon-btn-gold {
+    background: #000;
+    color: #fff;
+    border: 2px solid #ffcc00;
+    animation: neonPulseGold 2s infinite ease-in-out;
+    transition: all 0.2s;
+}
+
+.neon-btn-purple:hover,
+.neon-btn-cyan:hover,
+.neon-btn-gold:hover {
+    filter: brightness(1.2);
+}
